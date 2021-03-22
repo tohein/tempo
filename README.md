@@ -4,9 +4,9 @@ A variational autoencoder (VAE) model for latent cell-state inference from singl
 
 Our implementation features an additional module to integrate temporal information with scATAC-seq counts to inform the latent-space inference, correct measurement errors and learn a continuous ordering of cells from few available timepoints. 
 
-![Learned developmental trajectory](https://github.com/tohein/tempo/blob/master/notebooks/f1/animation.gif)
+An application of Tempo to data from four Drosophila melanogaster F1 crosses profiled at three stages across embryonic development [1] can be found in a [Jupyter notebook](https://github.com/tohein/tempo/blob/master/notebooks/f1/Tempo_final.ipynb).
 
-The application of Tempo to data from four Drosophila melanogaster F1 crosses profiled at three stages across embryonic development [1] can be found in the [Jupyter notebook](https://github.com/tohein/tempo/blob/master/notebooks/f1/Tempo_final.ipynb).
+![Learned developmental trajectory](https://github.com/tohein/tempo/blob/master/notebooks/f1/animation.gif)
 
 ## References
 
