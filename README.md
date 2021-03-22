@@ -1,12 +1,13 @@
 # Cell-state variational autoencoder with temporal integration.
 
-Variational autoencoder implementation using PyTorch for latent cell-state inference in single-cell ATAC-seq data.
+A variational autoencoder (VAE) model for latent cell-state inference from single-cell ATAC-seq (scATAC-seq) data [1].
 
-Our model incorporates an additional module to integrate temporal information with the observed ATAC-seq data to inform the latent-space inference, correct measurement errors and learn a continuous ordering of cells from fewavailable timepoints. 
+Our implementation features an additional module to integrate temporal information with scATAC-seq counts to inform the latent-space inference, correct measurement errors and learn a continuous ordering of cells from few available timepoints. 
 
 ![Learned developmental trajectory](https://github.com/tohein/tempo/blob/master/notebooks/f1/animation.gif)
 
+The application of Tempo to data from four Drosophila melanogaster F1 crosses profiled at three stages across embryonic development [1] can be found in the [Jupyter notebook](https://github.com/tohein/tempo/blob/master/notebooks/f1/Tempo_final.ipynb).
 
+## References
 
-Our implementation uses stochastic layers based on existing PyTorch distribution objects, which simplify
-the development of VAEs with diverse priors and likelihoods.
+[1] T. Heinen, S. Secchia, J. Reddington, B. Zhao, E.E.M. Furlong, O. Stegle. [scDALI: Modelling allelic heterogeneity of DNA accessibility in single-cells reveals context-specific genetic regulation](https://www.biorxiv.org/content/10.1101/2021.03.19.436142v1). Preprint, bioRxiv (2021).
